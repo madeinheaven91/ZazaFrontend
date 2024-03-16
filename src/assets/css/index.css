@@ -1,0 +1,188 @@
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: local("JetBrains Mono"),
+  url('../fonts/JetBrains Mono/webfonts/JetBrainsMono-Regular.woff2');
+}
+
+.half-transparent{
+  filter: opacity(50%);
+}
+
+.half-transparent-hover{
+  filter: opacity(50%);
+}
+
+.half-transparent-hover:hover{
+  filter: opacity(100%);
+}
+
+.icon{
+  height: 24px;
+  width: 24px;
+  background-size: 100%;
+  background-color: transparent;
+}
+
+.icon__big{
+  height: 64px;
+  width: 64px;
+  background-size: 100%;
+  background-color: transparent;
+}
+
+body{
+  margin: 0;
+  font-family: "JetBrains Mono", serif;
+}
+
+.header_title{
+  display: inline;
+  margin: 15px 0 15px 0;
+}
+
+header{
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 30px 0px 30px;
+  color: white;
+}
+
+.header_logo{
+  background-image: url("../images/adidas-icon.svg");
+  background-size: 100%;
+  width: 40px;
+  height: 40px;
+  filter: invert(1);
+}
+
+
+.header_flex{
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_flex a{
+  color: white;
+  text-underline: none;
+}
+
+.header_flex a:hover{
+  font-weight: bold;
+}
+
+aside{
+  width: 20%;
+  border: 1px solid dimgray;
+}
+
+aside > div{
+  padding: 15px;
+  border-bottom: 1px dimgray solid;
+}
+
+.aside_button{
+  background-color: deepskyblue;
+  color: white;
+  width: 100%;
+  font-size: 20px;
+  padding: 5px;
+  border: 0;
+  border-radius: 10px;
+}
+
+.aside_search{
+  border: 0;
+}
+
+main{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 10px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.main_note{
+  position: relative;
+  border-radius: 5px;
+  background-color: lightgray;
+  width: 15em;
+  padding: 10px;
+}
+
+.note_title{
+  width: 100%;
+  border: 0;
+  background: none;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+}
+
+.note_body{
+  width: 100%;
+  outline: none;
+  resize: none;
+  border: 1px black solid;
+  border-radius: 5px;
+  background: none;
+  font-size: 14px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.note_footer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.note_time {
+  display: flex;
+  align-items: center;
+}
+
+.note_time time{
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+.note_delete-button{
+  border: 0;
+  background: url("../images/delete-icon.svg");
+  background-size: 100%;
+}
+
+footer{
+  background-color: lightgray;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px black solid;
+}
+
+.taskbar_wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.taskbar_tabs{
+
+}
+
+.taskbar_tools{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.taskbar_button__settings{
+  border: 0;
+  background-image: url("../images/settings-icon.svg");
+}
+
